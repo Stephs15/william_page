@@ -1,0 +1,10 @@
+body{
+	background-color: black;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#bg_img{
+	background-image: url("../microphone.png");
+	height: 800px;
+	background-size: contain;
+}
