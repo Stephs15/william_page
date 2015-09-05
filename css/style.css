@@ -15,6 +15,11 @@
 	src: url(../fonts/Signika-Regular.otf);
 }
 
+@font-face {
+	font-family: 'SignikaBold';
+	src: url(../fonts/Signika-Bold.otf);
+}
+
 
 #bg_img{
 	background-image: url("../microphone.png");
@@ -83,14 +88,13 @@ section:before {
 	/*margin: 0px 25px 10px 20px;*/
 	display: inline-block;
 	float: left;
-	font-weight: bold;
+	font-family: "SignikaBold";
 }
 
 .menuItem a{
 	display: inline-block;
     text-decoration: none;
     color: #45b29a;
-    font-weight: 400;
     margin: 0 0 0 1em;
     font-size: 120%;
 }
@@ -103,7 +107,7 @@ section:before {
 
 body {
 	/*font-family: 'Josefin Sans', sans-serif;*/
-	font-family: 'Josefin Sans', sans-serif
+	font-family: 'Signika', sans-serif
 	color: #545454;
     background-color: #fff;
 }
@@ -160,7 +164,7 @@ a:hover, a p:hover{
 	position: absolute;
 	top: 50%;
 	font-family: 'LemonMilk';
-	-webkit-animation-duration: 1s;
+	-webkit-animation-duration: 0.7s;
 	/*-webkit-animation-delay: 1s;*/
 	/*-webkit-animation-iteration-count: infinite;*/
 }
@@ -172,12 +176,13 @@ a:hover, a p:hover{
 }
 
 #occupation{
+	font-family: "Signika";
 	position: absolute;
 	top: 60%;
 	text-indent: 50px
 	opacity: 0;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-delay: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 0.3s;
 	/*-webkit-animation-iteration-count: infinite;*/
 }
 
@@ -349,4 +354,8 @@ hr{
     margin: 1em 0;
     padding: 0; 
 
+}
+
+.error{
+	display: none;
 }

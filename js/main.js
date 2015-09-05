@@ -96,3 +96,35 @@ function checkAnimation() {
         });
     }
 }
+
+
+$(document).ready(function(){
+
+
+		$('.contactForm').validate({
+	    rules: {
+	       names: {
+	        required: true,
+	        minlength: 2,
+	       	required: true
+	      },
+
+	      message: {
+	       required: true,
+	       required: true
+	      },
+		  
+	      email: {
+	        required: true,
+	        email: true
+	      },
+	    },
+		highlight: function(element) {
+			$(element).closest('.form-group').removeClass('has-success has-feedback').addClass('has-error has-feedback');
+		},
+		success: function(element) {
+			$(element).closest('.form-group').removeClass('has-error has-feedback').addClass('has-success has-feedback');
+		}
+	  });
+
+}); // end document.ready
