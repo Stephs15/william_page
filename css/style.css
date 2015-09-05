@@ -10,6 +10,11 @@
 	src: url(../fonts/LemonMilk.otf);
 }
 
+@font-face {
+	font-family: 'Signika';
+	src: url(../fonts/Signika-Regular.otf);
+}
+
 
 #bg_img{
 	background-image: url("../microphone.png");
@@ -86,6 +91,11 @@ a:hover, a p:hover{
 	position: relative;
 }
 
+.darkSection{
+	background-color: #2d343e;
+	position: relative;
+}
+
 #name{
 	position: absolute;
 	top: 50%;
@@ -121,15 +131,97 @@ a:hover, a p:hover{
 	padding-top: 20px;
 }
 
+.workSection{
+	width: 100%;
+	padding-top: 20px;
+}
+
+.title{
+	font-family: 'Signika';
+	color: #45b29a;
+	padding: 40px 0px 20px 0px;
+	text-align: left;
+}
+
+.vLine{
+	padding-right: 10px;
+	color: white;
+}
+
+#moreVideos, .submit{
+	float:none;
+	position: relative;
+    display:inline-block;
+    text-align:center;
+    font-family: 'LemonMilk';
+    background-color: #45b29a;
+    color: white;
+}
+
+#moreVideosParent{
+    padding: 50px 0px 50px 0px;
+}
+
+p.social {
+    margin-bottom: 20px;
+}
+
+
+p.contact {
+    margin-bottom: 20px;
+    float: left;
+    font-family: 'Signika';
+}
+
+.audio{
+	padding-bottom: 30px;
+}
+
+
+.author{
+	/*text-align: left;*/
+}
+
+.testimonial{
+	font-family: 'Signika';
+	/*text-align: left;*/
+}
+
+/*Carousel*/
+
+.carousel-control.right, .carousel-control.left{
+	background-image: none; 
+}
+
+.carousel{
+    background: transparent;
+    margin: 20px 0px 50px 0px;
+}
+.carousel-caption{
+    position:static;
+    width: 100%;
+}
+
+
 
 /*TEXT PROPERTIES*/
-.font60{
-	font-size: 60px;
+.font50{
+	font-size: 50px;
 	width: auto;
 }
 
 .font30{
 	font-size: 30px;
+	width: auto;
+}
+
+.font40{
+	font-size: 40px;
+	width: auto;
+}
+
+.font20{
+	font-size: 20px;
 	width: auto;
 }
 
@@ -147,4 +239,8 @@ a:hover, a p:hover{
 
 .middle{
 	left: 50%;
+}
+
+.textCenter {
+    text-align: center;
 }
