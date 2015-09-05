@@ -32,7 +32,7 @@
     </head>
     <body class="">
         <section class="home lightSection"> 
-            <header class="headroom headroom--not-top headroom--pinned">
+            <header class="">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-4 text-center">
@@ -44,18 +44,24 @@
                         <nav id="top-nav">
                             <ul class="transition nav-list">
                                 <li class="menuItem">
-                                    <a class="menu-links" id="about" href="#aboutMeSection">
+                                    <a class="menu-links" id="about" href="#aboutMeA">
                                         ABOUT ME
                                     </a>
                                 </li>
                                 <li class="menuItem">
-                                    <a class="menu-links" id="work" href="#myWorkSection">
-                                        MY WORK
+                                    <a class="menu-links" id="work" href="#myWorkA">
+                                        DEMOS
                                     </a>
                                 </li>
 
                                 <li class="menuItem">
-                                    <a class="menu-links" id="contact" href="#contactSection">
+                                    <a class="menu-links" id="testimonials" href="#testimonialsA">
+                                        TESTIMONIALS
+                                    </a>
+                                </li>
+
+                                <li class="menuItem">
+                                    <a class="menu-links" id="contact" href="#contactA">
                                         CONTACT
                                     </a>
                                 </li>
@@ -84,6 +90,7 @@
             </div>
         </section>
 
+        <span class="anchor" id="aboutMeA"></span>
         <section class= "lightSection" id="aboutMeSection">
             <div class="container">
                 <div class="row">
@@ -123,37 +130,38 @@
             </div>
         </section>
 
-
-        <section class= "darkSection workSection">
-
+        <span class="anchor" id="myWorkA"></span>
+        <section class= "darkSection workSection" id="myWorkSection">
+        <span></span>
         <div class="container textCenter">
             <p class="title font40"><span class="vLine">|</span>VIDEO DEMOS</p>
 
             <div class="row">
                 <div class="video col-md-6 col-xs-6">
                     <video src="media/rain_forest.mp4" controls preload></video>
+                    <p class="textItalic author ">- Rain Forest Alliance</p>
                 </div>
 
                 <div class="video col-md-6 col-xs-6">
                     <video src="media/rain_forest.mp4" controls preload></video>
-                    
+                    <p class="textItalic author ">- Rain Forest Alliance</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="video col-md-6 col-xs-6">
                     <video src="media/rain_forest.mp4" controls preload></video>
-                   
+                    <p class="textItalic author ">- Rain Forest Alliance</p>
                 </div>
 
                 <div class="video col-md-6 col-xs-6">
                     <video src="media/rain_forest.mp4" controls preload></video>
-                   
+                    <p class="textItalic author ">- Rain Forest Alliance</p>
                 </div>
             </div>
 
-            <div class="row" id="moreVideosParent">
-                <button type="button" id="moreVideos" class="font20 btn">More Videos</button>
+            <div class="row" id="moreButtonParent">
+                <button type="button" id="moreButton" class="font20 btn">More Videos</button>
             </div>
                    
         </div>
@@ -170,13 +178,15 @@
                      <audio controls>
                         <source src="media/ciroq.mp3" type="audio/mpeg">
                     </audio>
+                    <p class="textItalic ">- Ciroq Vodka Commercial</p>
+
                 </div>
 
                 <div class="audio col-md-6 col-xs-6">
                    <audio controls>
                         <source src="media/ciroq.mp3" type="audio/mpeg">
                     </audio>
-                    
+                    <p class="textItalic ">- Ciroq Vodka Commercial</p>
                 </div>
             </div>
 
@@ -185,25 +195,26 @@
                     <audio controls>
                         <source src="media/ciroq.mp3" type="audio/mpeg">
                     </audio>
-                   
+                    <p class="textItalic ">- Ciroq Vodka Commercial</p>
                 </div>
 
                 <div class="audio col-md-6 col-xs-6">
                     <audio controls>
                         <source src="media/ciroq.mp3" type="audio/mpeg">
                     </audio>
-                   
+                    <p class="textItalic ">- Ciroq Vodka Commercial</p>
                 </div>
             </div>
 
-            <div class="row" id="moreVideosParent">
-                <button type="button" id="moreVideos" class="font20 btn">More Videos</button>
+            <div class="row" id="moreButtonParent">
+                <button type="button" id="moreButton" class="font20 btn">More audios</button>
             </div>
                    
         </div>
 
         </section>
 
+        <span class="anchor" id="testimonialsA"></span>
         <section class= "darkSection" id="testimonialsSection">
         <div class="container">
             <p class="title font40"><span class="vLine">|</span>PEOPLE ARE SAYING...</p>
@@ -212,18 +223,21 @@
                   <div class="carousel-inner">
                     <div class="item active"><!-- class of active since it's the first item -->
                       <div class="carousel-caption">
-                        <p class="testimonial font20">
-                            Morbi non nisl quis sapien vulputate mollis. Phasellus fringilla malesuada euismod.<br> Mauris laoreet ullamcorper magna, sit amet blandit arcu pharetra a. Proin at quam urna.
+                        <p class="testimonial font30">
+                            <img class="quotes" src="img/quote_open.png" alt="">
+                            Morbi non nisl quis sapien vulputate mollis. <br> Phasellus fringilla malesuada euismod. Mauris laoreet magna,<br> sit amet blandit arcu pharetra a. Proin at quam urna. 
+                            <img class="quotes" src="img/quote_close.png" alt="">
                         </p>
-                        <p class="author textItalic font10">Pedro Perez - Marketing</p>
+                        <p class="author textItalic font20">Pedro Perez - Marketing</p>
                       </div>
                     </div>
                     <div class="item">
                       <div class="carousel-caption container">
-                        <p class="testimonial font20">
-                            Morbi non nisl quis sapien vulputate mollis. Phasellus fringilla malesuada euismod.<br> Mauris laoreet ullamcorper magna, sit amet blandit arcu pharetra a. Proin at quam urna.
+                        <p class="testimonial font30">
+                            <img class="quotes" src="img/quote_open.png" alt="">Morbi non nisl quis sapien vulputate mollis. <br> Phasellus fringilla malesuada euismod. Mauris laoreet magna,<br> sit amet blandit arcu pharetra a. Proin at quam urna.
+                            <img class="quotes" src="img/quote_close.png" alt="">
                         </p>
-                        <p class="author textItalic font10">Maria Rodriguez - Ciroq</p>
+                        <p class="author textItalic font20">Maria Rodriguez - Ciroq</p>
                       </div>
                     </div>
                   </div><!-- /.carousel-inner -->
@@ -241,7 +255,7 @@
         </div>
         </section>
 
-
+        <span class="anchor" id="contactA"></span>
         <section class= "lightSection" id="contactSection">
         <div class="container">
             <p class="title font40"><span class="vLine">|</span>HAVE A QUESTION OR NEED A RATE?</p>
@@ -268,8 +282,7 @@
 
                             <div class="form-group">
                                 <div class="col-md-12">
-                                    <textarea class="form-control" cols="40" rows="10" placeholder="Message" required>                            
-                                    </textarea>
+                                    <textarea class="form-control" cols="40" rows="10" placeholder="Message" required></textarea>
                                 </div>
                             </div>
 
@@ -282,15 +295,17 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="col-md-4" id="contactInfo">
+                <div class="col-md-4 textCenter" id="contactInfo">
                     <p><span class="title textItalic font20">I’m looking forward to hearing from you!</span></p>
-                    <p>Please tell me what you’re looking for, and I’ll be in touch soon… </p>
+                    <p class="testimonial">Please tell me what you’re looking for, and I’ll be in touch soon… </p>
+                    <br>
+                    <a href="#" ><img class="textCenter" src="img/mail_icon.png" alt=""></a>
                     <p class="contact">
-                        <a href="#"><img src="img/mail_icon.png" alt=""></a>
                         william.figueroa680@gmail.com
                     </p>
+                    <hr>
+                    <a href="#"><img src="img/telephone_icon.png" alt=""></a>
                     <p class="contact">
-                        <a href="#"><img src="img/telephone_icon.png" alt=""></a>
                         +0 (000) 000-0000
                     </p>
 

@@ -27,10 +27,11 @@ input:focus,
 select:focus {
 	border: none;
 	outline: 0;
+	text-decoration: none;
 }
 
 .menuItem{
-	margin: 0 35px 10px 50px;
+	margin: 0px 35px 10px 20px;
 	display: inline-block;
 	float: left;
 	font-weight: bold;
@@ -59,9 +60,10 @@ body {
 }
 /*HEADER*/
 header {
-	/*position: fixed;*/
+	position: fixed;
 	top: 0;
 	width: 100%;
+	height: 70px;
 	background-color: #E0EBE8;
 	z-index: 90;
 	padding: 15px 0;
@@ -84,6 +86,13 @@ header {
 a:hover, a p:hover{
 	text-decoration: none;
 	color: #21564b;
+}
+
+.anchor{
+  display: block;
+  height: 70px; /*same height as header*/
+  margin-top: -70px; /*same height as header*/
+  visibility: hidden;
 }
 
 .lightSection{
@@ -128,8 +137,10 @@ a:hover, a p:hover{
 
 #aboutMeSection{
 	width: 100%;
-	padding-top: 20px;
+	padding: 50px 0px 0px 0px;
+	height: 100vh;
 }
+
 
 .workSection{
 	width: 100%;
@@ -139,7 +150,7 @@ a:hover, a p:hover{
 .title{
 	font-family: 'Signika';
 	color: #45b29a;
-	padding: 40px 0px 20px 0px;
+	padding: 40px 0px 50px 0px;
 	text-align: left;
 }
 
@@ -148,7 +159,11 @@ a:hover, a p:hover{
 	color: white;
 }
 
-#moreVideos, .submit{
+.video, .audio{
+	padding-bottom: 50px;
+}
+
+#moreButton, .submit{
 	float:none;
 	position: relative;
     display:inline-block;
@@ -158,8 +173,8 @@ a:hover, a p:hover{
     color: white;
 }
 
-#moreVideosParent{
-    padding: 50px 0px 50px 0px;
+#moreButtonParent{
+    padding: 50px 0px 80px 0px;
 }
 
 p.social {
@@ -168,18 +183,12 @@ p.social {
 
 
 p.contact {
-    margin-bottom: 20px;
-    float: left;
+    margin: 10px 0px 10px 0px;
     font-family: 'Signika';
 }
 
-.audio{
-	padding-bottom: 30px;
-}
-
-
 .author{
-	/*text-align: left;*/
+	color: white;
 }
 
 .testimonial{
@@ -195,11 +204,16 @@ p.contact {
 
 .carousel{
     background: transparent;
-    margin: 20px 0px 50px 0px;
+    height: 100%;
+    margin: 80px 0px 80px 0px;
 }
 .carousel-caption{
     position:static;
     width: 100%;
+}
+
+.quotes{
+	padding: 0px 5px 0px 5px;
 }
 
 
@@ -225,6 +239,11 @@ p.contact {
 	width: auto;
 }
 
+.font10{
+	font-size: 10px;
+	width: auto;
+}
+
 .white{
 	color: white;
 }
@@ -243,4 +262,14 @@ p.contact {
 
 .textCenter {
     text-align: center;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #45b29a;
+    margin: 1em 0;
+    padding: 0; 
+
 }
