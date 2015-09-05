@@ -177,7 +177,7 @@ a:hover, a p:hover{
 	text-indent: 50px
 	opacity: 0;
 	-webkit-animation-duration: 1s;
-	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 0.5s;
 	/*-webkit-animation-iteration-count: infinite;*/
 }
 
