@@ -30,8 +30,57 @@ select:focus {
 	text-decoration: none;
 }
 
+/*Section Skew*/
+section:before {
+    content: "";
+    width: 100%;
+    height: 0;
+    padding-bottom: 10%;
+    margin-top: -5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+ }
+
+
+.workSection:before {
+    -webkit-transform: skew(0deg,-3deg);
+    transform: skew(0deg,-3deg);
+    background: #2d343e;
+}
+
+.cont{
+	padding-top: 120px;
+}
+
+#testimonialsSection:before {
+    -webkit-transform: skew(0deg,-3deg);
+    transform: skew(0deg,-3deg);
+    background: #E0EBE8;
+}
+
+#aboutMeSection:before {
+    -webkit-transform: skew(0deg,-3deg);
+    transform: skew(0deg,-3deg);
+    background: #E0EBE8;
+}
+
+#contactSection:before {
+	-webkit-transform: skew(0deg,-3deg);
+	transform: skew(0deg,-3deg);
+	background: #E0EBE8;
+}
+
+.workSection, #testimonialsSection, #contactSection, #aboutMeSection{
+	width: 100%;
+	padding-bottom: 90px;
+	z-index: 200;
+}
+
 .menuItem{
-	margin: 0px 35px 10px 20px;
+	/*margin: 0px 25px 10px 20px;*/
 	display: inline-block;
 	float: left;
 	font-weight: bold;
@@ -65,7 +114,7 @@ header {
 	width: 100%;
 	height: 70px;
 	background-color: #E0EBE8;
-	z-index: 90;
+	z-index: 500;
 	padding: 15px 0;
 	border-bottom: 1px solid #dadada;
 	transition: all 0.3s;
@@ -80,13 +129,15 @@ header {
 	font-size: 30px;
 	margin: 0px 0px 0px 0px;
 	text-decoration: none;
+	
 }
-
 
 a:hover, a p:hover{
 	text-decoration: none;
 	color: #21564b;
 }
+
+
 
 .anchor{
   display: block;
@@ -109,13 +160,27 @@ a:hover, a p:hover{
 	position: absolute;
 	top: 50%;
 	font-family: 'LemonMilk';
+	-webkit-animation-duration: 1s;
+	/*-webkit-animation-delay: 1s;*/
+	/*-webkit-animation-iteration-count: infinite;*/
+}
+
+#picture{
+	-webkit-animation-duration: 1s;
+	/*-webkit-animation-delay: 1s;*/
+	/*-webkit-animation-iteration-count: infinite;*/
 }
 
 #occupation{
 	position: absolute;
-	top: 65%;
+	top: 60%;
 	text-indent: 50px
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+	/*-webkit-animation-iteration-count: infinite;*/
 }
+
 
 
 #name p, #occupation p{
@@ -137,21 +202,17 @@ a:hover, a p:hover{
 
 #aboutMeSection{
 	width: 100%;
-	padding: 50px 0px 0px 0px;
-	height: 100vh;
-}
-
-
-.workSection{
-	width: 100%;
-	padding-top: 20px;
+	padding: 50px 0px 150px 0px;
+	/*height: 100vh;*/
+	z-index: 200;
 }
 
 .title{
 	font-family: 'Signika';
 	color: #45b29a;
-	padding: 40px 0px 50px 0px;
+	padding: 0px 0px 50px 0px;
 	text-align: left;
+	z-index: 500;
 }
 
 .vLine{
@@ -173,8 +234,12 @@ a:hover, a p:hover{
     color: white;
 }
 
+#moreButton:hover{
+	color: #21564b;
+}
+
 #moreButtonParent{
-    padding: 50px 0px 80px 0px;
+    padding: 50px 0px 20px 0px;
 }
 
 p.social {
@@ -194,6 +259,18 @@ p.contact {
 .testimonial{
 	font-family: 'Signika';
 	/*text-align: left;*/
+}
+
+footer {
+	background-color: #2d343e;
+	color: white;
+}
+
+footer .reserved {
+    font-size: 12px;
+    margin-top: 20px;
+    float: left;
+    font-family: 'Signika'
 }
 
 /*Carousel*/
