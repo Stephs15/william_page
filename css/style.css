@@ -27,6 +27,15 @@
 	background-size: contain;
 }
 
+body {
+    font-family: 'Signika';
+    overflow-x: hidden;
+}
+
+.page {
+    overflow: hidden;
+}
+
 a:focus, a.hover,
 input:focus,
 select:focus {
@@ -41,7 +50,7 @@ section:before {
     width: 100%;
     height: 0;
     padding-bottom: 10%;
-    margin-top: -5%;
+    margin-top: -7%;
     position: absolute;
     top: 0;
     right: 0;
@@ -57,10 +66,16 @@ section:before {
 }
 
 .cont{
-	padding-top: 120px;
+	padding-top: 150px;
 }
 
 #testimonialsSection:before {
+    -webkit-transform: skew(0deg,-3deg);
+    transform: skew(0deg,-3deg);
+    background: #E0EBE8;
+}
+
+#clients:before {
     -webkit-transform: skew(0deg,-3deg);
     transform: skew(0deg,-3deg);
     background: #E0EBE8;
@@ -78,7 +93,7 @@ section:before {
 	background: #E0EBE8;
 }
 
-.workSection, #testimonialsSection, #contactSection, #aboutMeSection{
+.workSection, #testimonialsSection, #contactSection, #aboutMeSection, #clients{
 	width: 100%;
 	padding-bottom: 90px;
 	z-index: 200;
@@ -141,13 +156,20 @@ a:hover, a p:hover{
 	color: #21564b;
 }
 
+.logo{
+	width: 150px;
+	display: flex;
+}
 
+.logoGroup{
+	padding-bottom: 50px;
+}
 
 .anchor{
-  display: block;
-  height: 70px; /*same height as header*/
-  margin-top: -70px; /*same height as header*/
-  visibility: hidden;
+	display: block;
+	height: 70px; /*same height as header*/
+	margin-top: -70px; /*same height as header*/
+	visibility: hidden;
 }
 
 .lightSection{
@@ -158,6 +180,7 @@ a:hover, a p:hover{
 .darkSection{
 	background-color: #2d343e;
 	position: relative;
+	color: white;
 }
 
 #name{
@@ -186,7 +209,12 @@ a:hover, a p:hover{
 	/*-webkit-animation-iteration-count: infinite;*/
 }
 
+.videof{
 
+  -webkit-transform: scaleX(0.75); 
+  -moz-transform: scaleX(1);
+
+}
 
 #name p, #occupation p{
 	margin: 0px 0px 0px 40px;
@@ -215,7 +243,7 @@ a:hover, a p:hover{
 .title{
 	font-family: 'Signika';
 	color: #45b29a;
-	padding: 0px 0px 50px 0px;
+	padding: 0px 0px 0px 0px;
 	text-align: left;
 	z-index: 500;
 }
@@ -237,6 +265,7 @@ a:hover, a p:hover{
     font-family: 'LemonMilk';
     background-color: #45b29a;
     color: white;
+    margin-bottom: 30px
 }
 
 #moreButton:hover{
@@ -255,6 +284,11 @@ p.social {
 p.contact {
     margin: 10px 0px 10px 0px;
     font-family: 'Signika';
+}
+
+.aboutText{
+	font-size: 16px;
+    margin-bottom: 100px;
 }
 
 .author{
@@ -282,6 +316,10 @@ footer .reserved {
 
 .carousel-control.right, .carousel-control.left{
 	background-image: none; 
+}
+
+.carousel-inner{
+	padding: 0px 40px 0px 40px;
 }
 
 .carousel{
@@ -358,4 +396,106 @@ hr{
 
 .error{
 	display: none;
+}
+
+
+
+
+/*MEDIA QUERYS*/
+
+@media (max-width: 992px){
+	.menu-links {
+	    font-size: 14px !important;
+	}
+
+	.nav-list{
+		float: none;
+		text-align: center;
+	}
+
+	#top{
+		height: 700px;
+	}
+
+	#name p{
+		font-size: 30px;
+	}
+
+	#name{
+		top: 40%;
+	}
+
+	#occupation{
+		top: 50%;
+	}
+
+	#occupation p{
+		font-size: 20px;
+	}
+
+	.testimonial{
+		font-size: 20px;
+	}
+
+	.quotes{
+		width: 8%;
+	}
+
+	.author{
+		font-size: 15px;
+	}
+
+	.title{
+		font-size: 30px;
+	}
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 768px) {
+
+	.topName p{
+		font-size: 30px;
+		float: left;
+	}
+
+	.menu-links {
+	    font-size: 15px !important;
+	}
+
+	.nav-list{
+		float: right;
+	}
+}
+
+@media (max-width : 320px) {
+    .topName p{
+		display: none;
+	}
+
+	.menu-links{
+		float: none;
+	}
+
+	#name p{
+		font-size: 20px;
+	}
+
+	#name{
+		top: 50%;
+	}
+
+	#occupation{
+		top: 55%;
+	}
+
+	#occupation p{
+		font-size: 15px;
+	}
+
+	.cont{
+		padding-top: 30px;
+	}
 }
