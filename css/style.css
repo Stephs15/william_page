@@ -286,7 +286,7 @@ a:hover, a p:hover{
     padding: 50px 0px 20px 0px;
 }
 
-.demos{
+.space{
 	margin-top: 80px;
 }
 
@@ -321,7 +321,7 @@ footer {
 }
 
 footer .reserved {
-    font-size: 12px;
+    font-size: 12px !important;
     margin-top: 20px;
     float: left;
     font-family: 'Signika'
@@ -405,7 +405,7 @@ hr{
     border: 0;
     border-top: 1px solid #45b29a;
     margin: 1em 0;
-    padding: 0; 
+    padding: 0;
 
 }
 
@@ -420,7 +420,6 @@ hr{
     padding-bottom: 30px;
     padding-top: 30px
 }
-
 
 
 
@@ -515,7 +514,7 @@ hr{
 	}
 
 	#contactInfo{
-	    font-size: 20px;
+	    font-size: 15px;
 	}
 
 	footer .reserved {
