@@ -72,6 +72,12 @@ section:before {
 #testimonialsSection:before {
     -webkit-transform: skew(0deg,-3deg);
     transform: skew(0deg,-3deg);
+    background: #2d343e;
+}
+
+.workSectionA:before {
+    -webkit-transform: skew(0deg,-3deg);
+    transform: skew(0deg,-3deg);
     background: #E0EBE8;
 }
 
@@ -90,13 +96,17 @@ section:before {
 #contactSection:before {
 	-webkit-transform: skew(0deg,-3deg);
 	transform: skew(0deg,-3deg);
-	background: #E0EBE8;
+	background: #2d343e;
 }
 
-.workSection, #testimonialsSection, #contactSection, #aboutMeSection, #clients{
+.workSection, .workSectionA, #testimonialsSection, #contactSection, #aboutMeSection, #clients{
 	width: 100%;
 	padding-bottom: 90px;
 	z-index: 200;
+}
+
+.test{
+	margin-bottom: 150px;
 }
 
 .menuItem{
@@ -265,7 +275,7 @@ a:hover, a p:hover{
     font-family: 'LemonMilk';
     background-color: #45b29a;
     color: white;
-    margin-bottom: 30px
+    margin-bottom: 100px
 }
 
 #moreButton:hover{
@@ -274,6 +284,10 @@ a:hover, a p:hover{
 
 #moreButtonParent{
     padding: 50px 0px 20px 0px;
+}
+
+.demos{
+	margin-top: 80px;
 }
 
 p.social {
@@ -303,6 +317,7 @@ p.contact {
 footer {
 	background-color: #2d343e;
 	color: white;
+	font
 }
 
 footer .reserved {
@@ -398,6 +413,14 @@ hr{
 	display: none;
 }
 
+.logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 30px
+}
+
 
 
 
@@ -418,7 +441,7 @@ hr{
 	}
 
 	#name p{
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	#name{
@@ -449,7 +472,21 @@ hr{
 		font-size: 30px;
 	}
 
+	.logo{
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-bottom: 30px;
+	    padding-top: 30px
+	}
 
+	#contactInfo{
+	    font-size: 20px;
+	}
+
+	footer .reserved {
+	    font-size: 20px;
+	}
 
 }
 
@@ -467,6 +504,22 @@ hr{
 
 	.nav-list{
 		float: right;
+	}
+
+	.logo{
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-bottom: 30px;
+	    padding-top: 30px
+	}
+
+	#contactInfo{
+	    font-size: 20px;
+	}
+
+	footer .reserved {
+	    font-size: 20px;
 	}
 }
 
@@ -497,5 +550,13 @@ hr{
 
 	.cont{
 		padding-top: 30px;
+	}
+
+	.logo{
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-bottom: 30px;
+	    padding-top: 30px
 	}
 }
