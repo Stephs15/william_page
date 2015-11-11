@@ -128,3 +128,18 @@ $(document).ready(function(){
 	  });
 
 }); // end document.ready
+
+$(function() {
+    $('#contactform').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'contact-form-handler.php',
+            data: { name: $(this).name.value, 
+                    email: $(this).email.value, 
+                    message: $(this).message.value 
+            }
+        });
+        return false;
+    }); 
+})

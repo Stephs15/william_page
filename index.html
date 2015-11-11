@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link href="css/bootstrap.icon-large.min.css" rel="stylesheet">
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -37,7 +38,8 @@
         <section class="home lightSection"> 
             <header class="">
                 <div class="container">
-                    <div class="row">
+
+                    <div class="row visible-lg visible-md">
                         <div class="col-md-4 text-center visible-md visible-lg visible-sm">
                             <a href="index.html" class="topName">
                               <p>William Figueroa</p>
@@ -53,23 +55,24 @@
                             <ul class="transition nav-list">
                                 <li class="menuItem">
                                     <a class="menu-links" id="about" href="#aboutMeA">
-                                        ABOUT
+                                        BIO
                                     </a>
                                 </li>
+
                                 <li class="menuItem">
                                     <a class="menu-links" id="work" href="#myWorkA">
                                         DEMOS
                                     </a>
                                 </li>
 
-                                <!-- <li class="menuItem">
+                                <li class="menuItem">
                                     <a class="menu-links" id="testimonials" href="#testimonialsA">
                                         TESTIMONIALS
                                     </a>
-                                </li> -->
+                                </li>
 
                                 <li class="menuItem">
-                                    <a class="menu-links" id="testimonials" href="#testimonialsA">
+                                    <a class="menu-links" id="testimonials" href="#clientsA">
                                         CLIENTS
                                     </a>
                                 </li>
@@ -81,8 +84,53 @@
                                 </li>
                             </ul>
                         </nav>
-                        </div>
                     </div>
+
+                    </div>
+                    <div class="row visible-xs visible-sm" id="icon-nav">
+
+                        <div class="col-xs-2 text-center">
+                            <a href="index.html" class="topName">
+                              <p>WF</p>
+                            </a>
+                        </div>
+                      
+                        
+                        <nav id="top-nav">
+                            <ul class="transition nav-list">
+                                <li class="menuItem">
+                                    <a class="menu-links" id="about" href="#aboutMeA">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                                
+                                <li class="menuItem">
+                                    <a class="menu-links" id="work" href="#myWorkA">
+                                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+
+                                <li class="menuItem">
+                                    <a class="menu-links" id="testimonials" href="#testimonialsA">
+                                        <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+
+                                <li class="menuItem">
+                                    <a class="menu-links" id="testimonials" href="#clientsA">
+                                        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+
+                                <li class="menuItem">
+                                    <a class="menu-links" id="contact" href="#contactA">
+                                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
             </header>
         </section>
@@ -321,7 +369,14 @@
                     </div>
                 </div>
 
+            <hr>
+
+                <div class="font20">
+                    And More...<br>
+                    Lion King | Rubbermaid | Rain Forest Alliance | Beechcraft Aviation | Louis and Clark Expedition | Simpson Show | Santa is coming | Buffalo Wild Winds&#8482; | National TV & radio PSA campaign “Prevention of child abuse” | “The Road Rage an American tragedy” documentary 
+                </div>
             </div>
+
         </section>
 
         <span class="anchor" id="contactA"></span>
@@ -330,13 +385,13 @@
                 <p class="title font40"><span class="vLine">|</span>SEND ME A MESSAGE</p>
                 <div class="row space">
                     <div class="col-md-6">
-                        <form class="form-horizontal contactForm" method="POST" name="contactform" action="contact-form-handler.php">
+                        <form class="form-horizontal contactForm" method="POST" name="contactform" id="contactform">
                             <fieldset>
 
                                 <!-- Text input-->
                                 <div class="form-group">
                                   <div class="col-md-12">
-                                  <input id="names" name="names" type="text" placeholder="Name" class="form-control input-md" required>
+                                  <input id="names" name="name" type="text" placeholder="Name" class="form-control input-md" required>
                                     
                                   </div>
                                 </div>
@@ -351,7 +406,7 @@
 
                                 <div class="form-group form-control-group">
                                     <div class="col-md-12">
-                                        <textarea class="form-control" cols="40" rows="10" placeholder="Message" required></textarea>
+                                        <textarea class="form-control" name="message" cols="40" rows="10" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
 
@@ -399,13 +454,13 @@
                             <a href="#"><img src="img/facebook_icon.png" alt=""></a>
                         </p>
                         <p class="col-xs-12 social textCenter">
-                            <a href="#"><img src="img/twitter_icon.png" alt=""></a>
+                            <a href="https://twitter.com/voicesbywilliam"><img src="img/twitter_icon.png" alt=""></a>
                         </p>
                         <p class="col-xs-12 social textCenter">
                             <a href="#"><img src="img/linkedin_icon.png" alt=""></a>
                         </p>
                         <p class="col-xs-12 social textCenter">
-                            <a href="#"><img src="img/instagram_icon.png" alt=""></a>
+                            <a href="https://www.instagram.com/williamfigueroanyc/"><img src="img/instagram_icon.png" alt=""></a>
                         </p>
 
                     </div>

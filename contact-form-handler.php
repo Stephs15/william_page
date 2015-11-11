@@ -39,13 +39,19 @@ if( empty($errors))
 <head>
 	<title>Contact form handler</title>
 </head>
-
+<?php
+    print phpinfo();  
+?>
 <body>
 <!-- This page is displayed only if there is some error -->
 <?php
 echo nl2br($errors);
-?>
+echo($_POST);
 
+?>
+<?php
+    print phpinfo();  
+?>
 
 </body>
 </html>
