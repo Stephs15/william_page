@@ -448,3 +448,13 @@ MIT Licence: https://raw.github.com/redhotsly/simple-expand/master/licence-mit.t
         return this;
     };
 }(jQuery));
+
+
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('active');
+        jQuery('.menu ul').toggleClass('active');
+ 
+        e.preventDefault();
+    });
+});
