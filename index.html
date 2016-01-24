@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link href="css/bootstrap.icon-large.min.css" rel="stylesheet">
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -37,39 +38,37 @@
         <section class="home lightSection"> 
             <header class="">
                 <div class="container">
+
                     <div class="row">
                         <div class="col-md-4 text-center visible-md visible-lg visible-sm">
                             <a href="index.html" class="topName">
                               <p>William Figueroa</p>
                             </a>
                         </div>
-                        <div class="col-xs-2 text-center visible-md visible-xs">
-                            <a href="index.html" class="topName">
-                              <p>WF</p>
-                            </a>
-                        </div>
+                        
                         <div>
-                        <nav id="top-nav">
-                            <ul class="transition nav-list">
+                        <nav id="top-nav" class="menu">
+                            <ul class="transition nav-list active">
                                 <li class="menuItem">
                                     <a class="menu-links" id="about" href="#aboutMeA">
-                                        ABOUT
+                                        BIO
                                     </a>
                                 </li>
+
                                 <li class="menuItem">
                                     <a class="menu-links" id="work" href="#myWorkA">
                                         DEMOS
                                     </a>
                                 </li>
 
-                                <!-- <li class="menuItem">
+                                <li class="menuItem">
                                     <a class="menu-links" id="testimonials" href="#testimonialsA">
                                         TESTIMONIALS
                                     </a>
-                                </li> -->
+                                </li>
 
                                 <li class="menuItem">
-                                    <a class="menu-links" id="testimonials" href="#testimonialsA">
+                                    <a class="menu-links" id="testimonials" href="#clientsA">
                                         CLIENTS
                                     </a>
                                 </li>
@@ -80,9 +79,61 @@
                                     </a>
                                 </li>
                             </ul>
+                            <a class="toggle-nav" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+
                         </nav>
-                        </div>
+                            <div class="col-xs-8 text-center visible-sm visible-xs">
+                                <!-- <a href="index.html" class="topName"> -->
+                                  <p class="littleName">William Figueroa</p>
+                                <!-- </a> -->
+                            </div>
                     </div>
+
+                    </div>
+                  <!--   <div class="row visible-xs visible-sm" id="icon-nav">
+
+                        <div class="col-xs-2 text-center">
+                            <a href="index.html" class="topName">
+                              <p>WF</p>
+                            </a>
+                        </div>
+                      
+                        
+                        <nav id="top-nav">
+                            <ul class="transition nav-list">
+                                <li class="menuItem">
+                                    <a class="menu-links" id="about" href="#aboutMeA">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                                
+                                <li class="menuItem">
+                                    <a class="menu-links" id="work" href="#myWorkA">
+                                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+
+                                <li class="menuItem">
+                                    <a class="menu-links" id="testimonials" href="#testimonialsA">
+                                        <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+
+                                <li class="menuItem">
+                                    <a class="menu-links" id="testimonials" href="#clientsA">
+                                        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+
+                                <li class="menuItem">
+                                    <a class="menu-links" id="contact" href="#contactA">
+                                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> -->
+
                 </div>
             </header>
         </section>
@@ -107,43 +158,141 @@
         <section class= "lightSection" id="aboutMeSection">
             <div class="container">
                 <div class="row">
-                    <div class= "col-xs-12 col-sm-12 col-md-12 text-center">
-                        <article>
-                            <figure>
-                                <img id="picture" src="img/photo.png">
-                            </figure>
-                        </article>
-                    </div>
-                    <div class= "col-xs-12 col-sm-12 col-md-12 text-center">
-                        <h2>Hi.</h2>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class= "col-xs-12 col-md-offset-1 col-sm-12 col-md-10 text-center aboutText">
-                        <article>
-                            <p>
-                                I was born in Venezuela where I graduated with a Bachelor in Business Administration. Then I received a Master in Performing Arts Administration from New York University. I also studied acting at Juana Sujo Academy of Performing Art in Caracas. Though from childhood to college, acting and singing were my passions, I found my greatest love when I transitioned into a full-time voice over artist.
-                            </p>
-                            <p>
-                                I am a professional voice over artist located in New York City with over 20 years of experience, fluent in Spanish and English. I have worked for commercial clients such as Kraft, Liberty Mutual Insurance and McDonald’s, several PSA campaigns for the Hispanic Market in the USA, as well as international voice productions for Latin-America, Europe and Asia. I have voiced a teddy bear toy, an electoral voting machine and I have been the announcer voice for Broadway’s The Lion King, as well as many industrial films and documentaries.
-                            </p>
+                    <div class="row visible-lg visible-md">
+                        <div class= "col-xs-3 col-sm-3 col-md-3 text-center">
+                            <article>
+                                <figure>
+                                    <!-- <img id="picture" src="img/photo.jpg"> -->
+                                    <div class="circular img-responsive" id="picture"></div>
+                                </figure>
+                                <p class="abilities">
+                                    ADR / Looping
+                                    <br>
+                                    Apps
+                                    <br>
+                                    Corporate Presentations
+                                    <br>
+                                    Corporate Branding
+                                    <br>
+                                    Children’s Audio Story Narration
+                                    <br>
+                                    Documentary & TV Program Narration
+                                    IVR / Telephony
+                                    <br>
+                                    On-Hold Messages
+                                    <br>
+                                    Promo / Trailer
+                                    <br>
+                                    Medical / Technical Narration
+                                    <br>
+                                    Museum Audio Tours
+                                    <br>
+                                    Training / Instructional Voiceover Videos
+                                </p>
+                            </article>
+                        </div>
+                        
+                        <div class= "col-xs-9 col-sm-9 col-md-9 aboutText">
+                            <div class="aboutWrapper">
+                                <div>
+                                    <h1>Hi! I'm William</h1>
+                                </div>
+                                <article>
+                                    <p>
+                                        I was born in Venezuela where I graduated with a Bachelor in Business Administration. Then I received a Master in Performing Arts Administration from New York University. I also studied acting at Juana Sujo Academy of Performing Art in Caracas. Though from childhood to college, acting and singing were my passions, I found my greatest love when I transitioned into a full-time voice over artist.
+                                    </p>
 
-                            <p>
-                               With a flexible and multifaceted voice in a tenor to baritone range, I can portray different middle age male characters to suit your casting needs. I am normally booked for my unaccented Neutral Spanish but I also perform in Castilian Spanish, Venezuelan and Spanglish. From a serene and confident voice to a crazy cartoon character, from deep resonance, a stark authoritative or a voice full of emotions, or a friendly and comforting sound, I will deliver your words with the personality required to reach the Latino consumers. Always prepared and on time, I have the stamina to work with a positive attitude until the job is done.
-                            </p>
+                                    <div>
+                                    <!-- <div class="content"> -->
+                                        <p>
+                                            I am a professional voice over artist located in New York City with over 20 years of experience, fluent in Spanish and English. I have worked for commercial clients such as Kraft, Liberty Mutual Insurance and McDonald’s, several PSA campaigns for the Hispanic Market in the USA, as well as international voice productions for Latin-America, Europe and Asia. I have voiced a teddy bear toy, an electoral voting machine and I have been the announcer voice for Broadway’s The Lion King, as well as many industrial films and documentaries.
+                                        </p>
 
-                            <p>
-                                I love not only recording, but also assuring that the text is grammatically correct and the message is clearly transmitted to your desired market audiences. As needed, I could review your translation and offer my cross-cultural expertise in the Hispanic Market, providing that consultancy at no extra cost.
-                                
-                                I also monitor other talents to ensure proper reading, dubbing, and pronunciation.
-                                
-                                I have been an active member of SAG-AFTRA since 1995.
+                                        <p>
+                                           With a flexible and multifaceted voice in a tenor to baritone range, I can portray different middle age male characters to suit your casting needs. I am normally booked for my unaccented Neutral Spanish but I also perform in Castilian Spanish, Venezuelan and Spanglish. From a serene and confident voice to a crazy cartoon character, from deep resonance, a stark authoritative or a voice full of emotions, or a friendly and comforting sound, I will deliver your words with the personality required to reach the Latino consumers. Always prepared and on time, I have the stamina to work with a positive attitude until the job is done.
+                                        </p>
 
-                                You can contact me directly through my contact link or through these agencies: Abrams & Artists (NY), Innovative Artist (NY), etc.
-                            </p>
-                        </article>
-                    </div>
+                                        <p>
+                                            I love not only recording, but also assuring that the text is grammatically correct and the message is clearly transmitted to your desired market audiences. As needed, I could review your translation and offer my cross-cultural expertise in the Hispanic Market, providing that consultancy at no extra cost.
+                                            
+                                            I also monitor other talents to ensure proper reading, dubbing, and pronunciation.
+                                            
+                                            I have been an active member of SAG-AFTRA since 1995.
+
+                                        </p>
+                                    </div>
+                                    <!-- <a class="expander button" href>Read More</a> -->
+                                </article>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="visible-xs visible-sm">
+                        <div class="row">
+                            <div class= "col-xs-12 col-sm-12 text-center">
+                                <article>
+                                    <figure>
+                                        <!-- <img id="picture" src="img/photo.jpg"> -->
+                                        <div class="circular img-responsive" id="picture"></div>
+                                    </figure>
+                                    
+                                </article>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row">
+                            <div class= "col-xs-12 col-sm-12 aboutText">
+                                <div class="aboutWrapper">
+                                    <div class="hiTitle">
+                                        <h2>Hi! I'm William</h2>
+                                    </div>
+                                    <article>
+                                        <p>
+                                            I was born in Venezuela where I graduated with a Bachelor in Business Administration. Then I received a Master in Performing Arts Administration from New York University. I also studied acting at Juana Sujo Academy of Performing Art in Caracas. Though from childhood to college, acting and singing were my passions, I found my greatest love when I transitioned into a full-time voice over artist.
+                                        </p>
+
+                                        <div class="content">
+                                            <p>
+                                                I am a professional voice over artist located in New York City with over 20 years of experience, fluent in Spanish and English. I have worked for commercial clients such as Kraft, Liberty Mutual Insurance and McDonald’s, several PSA campaigns for the Hispanic Market in the USA, as well as international voice productions for Latin-America, Europe and Asia. I have voiced a teddy bear toy, an electoral voting machine and I have been the announcer voice for Broadway’s The Lion King, as well as many industrial films and documentaries.
+                                            </p>
+
+                                            <p>
+                                               With a flexible and multifaceted voice in a tenor to baritone range, I can portray different middle age male characters to suit your casting needs. I am normally booked for my unaccented Neutral Spanish but I also perform in Castilian Spanish, Venezuelan and Spanglish. From a serene and confident voice to a crazy cartoon character, from deep resonance, a stark authoritative or a voice full of emotions, or a friendly and comforting sound, I will deliver your words with the personality required to reach the Latino consumers. Always prepared and on time, I have the stamina to work with a positive attitude until the job is done.
+                                            </p>
+
+                                            <p>
+                                                I love not only recording, but also assuring that the text is grammatically correct and the message is clearly transmitted to your desired market audiences. As needed, I could review your translation and offer my cross-cultural expertise in the Hispanic Market, providing that consultancy at no extra cost.
+                                                
+                                                I also monitor other talents to ensure proper reading, dubbing, and pronunciation.
+                                                
+                                                I have been an active member of SAG-AFTRA since 1995.
+
+                                            </p>
+                                        </div>
+                                        <a class="expander button" href>Read More</a>
+                                    </article>
+                                    <p class="abilities">
+                                        <span style="font-weight: bold">What I Do:</span> 
+                                        ADR / Looping | 
+                                        Apps | 
+                                        Corporate Presentations | 
+                                        Corporate Branding | 
+                                        Children’s Audio Story Narration | 
+                                        Documentary & TV Program Narration | 
+                                        IVR / Telephony | 
+                                        On-Hold Messages | 
+                                        Promo / Trailer | 
+                                        Medical / Technical Narration | 
+                                        Museum Audio Tours | 
+                                        Training / Instructional Voiceover Videos | 
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>   
+
                 </div>
             </div>
         </section>
@@ -163,24 +312,24 @@
 
                     <div class="col-md-6 col-xs-12">
                         <iframe width="420" height="315" src="https://www.youtube.com/embed/m_gMXYBI7hw" frameborder="0" allowfullscreen></iframe>
-                        <p class="textItalic author ">- Rain Forest Alliance</p>
+                        <p class="textItalic author ">- Fifa 2014 Commercial</p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="media video col-md-6 col-xs-12">
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/m_gMXYBI7hw" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/hYpfFaCs0zM" frameborder="0" allowfullscreen></iframe>
                         <p class="textItalic author ">- Ciroq Vodka Commercial</p>
                     </div>
 
                     <div class="media video col-md-6 col-xs-12">
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/m_gMXYBI7hw" frameborder="0" allowfullscreen></iframe>
-                        <p class="textItalic author ">- Rain Forest Alliance</p>
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/wBNfmPf4ncU" frameborder="0" allowfullscreen></iframe>
+                        <p class="textItalic author ">- Forever Tango</p>
                     </div>
                 </div>
 
                 <div class="row" id="moreButtonParent">
-                    <button type="button" id="moreButton" class="font20 btn">More Videos</button>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCclr-MXA7gViiXoNdJiduzQ" type="button" id="moreButton" class="font20 btn">More Videos</a>
                 </div>
                        
             </div>
@@ -192,11 +341,10 @@
 
                 <div class="row space">
                     <div class="audio col-md-6 col-xs-12">
-                         <audio controls>
-                            <source src="media/ciroq.mp3" type="audio/mpeg">
+                        <audio controls>
+                            <source src="media/compilation.mp3" type="audio/mpeg">
                         </audio>
-                        <p class="textItalic ">- Ciroq Vodka Commercial</p>
-
+                        <p class="textItalic ">- Voice Over Compilation</p>
                     </div>
 
                     <div class="audio col-md-6 col-xs-12">
@@ -210,9 +358,9 @@
                 <div class="row">
                     <div class="audio col-md-6 col-xs-12">
                         <audio controls>
-                            <source src="media/ciroq.mp3" type="audio/mpeg">
+                            <source src="media/marriott.mp3" type="audio/mpeg">
                         </audio>
-                        <p class="textItalic ">- Ciroq Vodka Commercial</p>
+                        <p class="textItalic ">- Marriott Hotel</p>
                     </div>
 
                     <div class="audio col-md-6 col-xs-12">
@@ -224,7 +372,7 @@
                 </div>
 
                 <div class="row" id="moreButtonParent">
-                    <button type="button" id="moreButton" class="font20 btn">More audios</button>
+                    <a target="_blank" href="https://soundcloud.com/voicesbywilliam/" type="button" id="moreButton" class="font20 btn">More audios</a>
                 </div>
                        
             </div>
@@ -245,16 +393,19 @@
                                 ...I could not believe how fast and efficient was working with William <br> Figueroa. He was able to correct some syntax errors in the text <br>that made all the difference in the world
                                 <img class="quotes" src="img/quote_close.png" alt="">
                             </p>
+                            <br>
                             <p class="author textItalic font20">Felicia Landaeta - Grupo Creat Publicidad, Caracas</p>
                           </div>
+                          <br>
                         </div>
                         <div class="item">
                           <div class="carousel-caption container">
                             <p class="testimonial font30">
-                                <img class="quotes" src="img/quote_open.png" alt="">Morbi non nisl quis sapien vulputate mollis. <br> Phasellus fringilla malesuada euismod. Mauris laoreet magna,<br> sit amet blandit arcu pharetra a. Proin at quam urna.
+                                <img class="quotes" src="img/quote_open.png" alt="">
+                                Whenever I need a voice with gravitas, I call William. His voice <br>lends authority to the project, whether it's about machining <br>industrial fittings or keeping your family safe in severe weather.<br>I love having him in my arsenal
                                 <img class="quotes" src="img/quote_close.png" alt="">
                             </p>
-                            <p class="author textItalic font20">Maria Rodriguez - Ciroq</p>
+                            <p class="author textItalic font20">Tony Chance, Senior Producer - CKP Media</p>
                           </div>
                         </div>
                       </div><!-- /.carousel-inner -->
@@ -272,6 +423,7 @@
             </div>
         </section>
 
+        <span class="anchor" id="clientsA"></span>
         <section class="lightSection" id="clients">
             <div class="container textCenter test">
                 <p class="title font40"><span class="vLine">|</span>HAPPY CLIENTS</p>
@@ -321,7 +473,14 @@
                     </div>
                 </div>
 
+            <hr>
+
+                <div class="font20">
+                    And More...<br>
+                    Lion King | Rubbermaid | Rain Forest Alliance | Beechcraft Aviation | Louis and Clark Expedition | Simpson Show | Santa is coming | Buffalo Wild Winds&#8482; | National TV & radio PSA campaign “Prevention of child abuse” | “The Road Rage an American tragedy” documentary 
+                </div>
             </div>
+
         </section>
 
         <span class="anchor" id="contactA"></span>
@@ -330,13 +489,13 @@
                 <p class="title font40"><span class="vLine">|</span>SEND ME A MESSAGE</p>
                 <div class="row space">
                     <div class="col-md-6">
-                        <form class="form-horizontal contactForm" method="POST" name="contactform" action="contact-form-handler.php">
+                        <form class="form-horizontal contactForm" method="POST" name="contactform" id="contactform">
                             <fieldset>
 
                                 <!-- Text input-->
                                 <div class="form-group">
                                   <div class="col-md-12">
-                                  <input id="names" name="names" type="text" placeholder="Name" class="form-control input-md" required>
+                                  <input id="names" name="name" type="text" placeholder="Name" class="form-control input-md" required>
                                     
                                   </div>
                                 </div>
@@ -351,7 +510,7 @@
 
                                 <div class="form-group form-control-group">
                                     <div class="col-md-12">
-                                        <textarea class="form-control" cols="40" rows="10" placeholder="Message" required></textarea>
+                                        <textarea class="form-control" name="message" cols="40" rows="10" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
 
@@ -375,7 +534,7 @@
                         <hr>
                         <a href="#"><img src="img/telephone_icon.png" alt=""></a>
                         <p class="contact">
-                            917 224 9003
+                            Direct Line: 917 224 9003
                         </p>
                         <hr>
                         
@@ -396,16 +555,16 @@
                     </div>
                     <div class="col-md-2">
                         <p class="col-xs-12 social textCenter">
-                            <a href="#"><img src="img/facebook_icon.png" alt=""></a>
+                            <a target="_blank" href="#"><img src="img/facebook_icon.png" alt=""></a>
                         </p>
                         <p class="col-xs-12 social textCenter">
-                            <a href="#"><img src="img/twitter_icon.png" alt=""></a>
+                            <a target="_blank" href="https://twitter.com/voicesbywilliam"><img src="img/twitter_icon.png" alt=""></a>
                         </p>
                         <p class="col-xs-12 social textCenter">
-                            <a href="#"><img src="img/linkedin_icon.png" alt=""></a>
+                            <a target="_blank" href="#"><img src="img/linkedin_icon.png" alt=""></a>
                         </p>
                         <p class="col-xs-12 social textCenter">
-                            <a href="#"><img src="img/instagram_icon.png" alt=""></a>
+                            <a target="_blank" href="https://www.instagram.com/williamfigueroanyc/"><img src="img/instagram_icon.png" alt=""></a>
                         </p>
 
                     </div>
@@ -423,7 +582,7 @@
               </div>
               <div class="row">
                 <p class="reserved">
-                  © 2015 William Figueroa / site by <a>Marjorie Figueroa</a>
+                  © 2015 William Figueroa / site by <a target="_blank">Marjorie Figueroa</a>
                 </p>
 
               </div>
