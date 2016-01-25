@@ -339,6 +339,7 @@ p.contact {
 
 .aboutWrapper{
 	padding-left: 30px;
+    margin-bottom: 50px;
 }
 
 .author {
@@ -348,10 +349,10 @@ p.contact {
 .testimonial {
     font-family: 'Signika';
     /*text-align: left;*/
-}|
+}
 
 footer {
-    background-color: #2d343e;
+    background-color: #2d343e !important;
     color: white;
     font
 }
@@ -456,6 +457,11 @@ hr {
     display: none;
 }
 
+.active {
+    color: #ff0000;
+    text-decoration: none;
+}
+
 .logo {
     display: block;
 	margin-left: auto;
@@ -475,20 +481,27 @@ hr {
         float: none;
         text-align: center;
     }
+    .topName{
+		float: right;
+    }
     #top {
 		height: 700px;
     }
     #name p {
-        font-size: 25px;
+        font-size: 40px;
     }
     #name {
         top: 40%;
+	    height: 9%;
+	    width: 80%;
     }
     #occupation {
         top: 50%;
+        height: 5%;
+	    width: 60%;
     }
     #occupation p {
-        font-size: 20px;
+        font-size: 25px;
     }
     .testimonial {
         font-size: 20px;
@@ -515,6 +528,14 @@ hr {
     footer .reserved {
         font-size: 20px;
     }
+    .circular{
+		width: 70%;
+    	height: 450px;
+	}
+	.abilities{
+		font-size: 12px;
+		margin-top: 70px;
+	}
 }
 
 /* SM */
