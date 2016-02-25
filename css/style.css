@@ -154,10 +154,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 70px;
+    height: 55px;
     background-color: #E0EBE8;
     z-index: 500;
-    padding: 15px 0;
+    padding: 8px 0;
     border-bottom: 1px solid #dadada;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -276,8 +276,8 @@ a p:hover {
 
 #aboutMeSection {
     width: 100%;
-    padding: 50px 0px 150px 0px;
-    /*height: 100vh;*/
+    padding: 0px 0px 10px 0px;
+    height: auto;
     z-index: 200;
 }
 
@@ -308,7 +308,7 @@ a p:hover {
     font-family: 'LemonMilk';
     background-color: #45b29a;
     color: white;
-    margin-bottom: 100px
+    /*margin-bottom: 100px;*/
 }
 
 #moreButton:hover {
@@ -316,7 +316,7 @@ a p:hover {
 }
 
 #moreButtonParent {
-    padding: 50px 0px 20px 0px;
+    padding: 50px 0px 30px 0px;
 }
 
 .space {
@@ -364,6 +364,10 @@ footer .reserved {
     font-family: 'Signika'
 }
 
+iframe {
+	width: 420px;
+	height: 315px;
+}
 
 /*Carousel*/
 
@@ -374,6 +378,7 @@ footer .reserved {
 
 .carousel-inner {
     padding: 0px 40px 0px 40px;
+    height: 220px;
 }
 
 .carousel {
@@ -393,6 +398,10 @@ footer .reserved {
 
 .hiTitle{
 	text-align: center;
+}
+
+article {
+	margin-right: 10px;
 }
 
 
@@ -471,164 +480,9 @@ hr {
 }
 
 
-/*MEDIA QUERYS*/
-
-@media (max-width: 992px) {
-    .menu-links {
-        font-size: 14px !important;
-    }
-    .nav-list {
-        float: none;
-        text-align: center;
-    }
-    .topName{
-		float: right;
-    }
-    #top {
-		height: 700px;
-    }
-    #name p {
-        font-size: 40px;
-    }
-    #name {
-        top: 40%;
-	    height: 9%;
-	    width: 80%;
-    }
-    #occupation {
-        top: 50%;
-        height: 5%;
-	    width: 60%;
-    }
-    #occupation p {
-        font-size: 25px;
-    }
-    .testimonial {
-        font-size: 20px;
-    }
-    .quotes {
-        width: 8%;
-    }
-    .author {
-        font-size: 15px;
-    }
-    .title {
-        font-size: 30px;
-    }
-    .logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 30px;
-        padding-top: 30px
-    }
-    #contactInfo {
-        font-size: 20px;
-    }
-    footer .reserved {
-        font-size: 20px;
-    }
-    .circular{
-		width: 70%;
-    	height: 450px;
-	}
-	.abilities{
-		font-size: 12px;
-		margin-top: 70px;
-	}
-}
-
-/* SM */
-@media (max-width: 480px) {
-	.menu{
-		float: left;
-	}
-
-	.littleName{
-		float: right;
-	}
-
-	.circular{
-		width: 70%;
-    	height: 240px;
-	}
-
-	.abilities{
-		font-size: 12px;
-		margin-top: 70px;
-	}
-}
 
 
-/* Small Devices, Tablets */
 
-@media (min-width: 768px) {
-    .topName p {
-        font-size: 30px;
-        float: left;
-    }
-    .menu-links {
-        font-size: 15px !important;
-    }
-    .nav-list {
-        float: right;
-    }
-    .logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 30px;
-        padding-top: 30px
-    }
-    #contactInfo {
-        font-size: 15px;
-    }
-    footer .reserved {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 320px) {
-	#top{
-		position-x: 50%; 
-	}
-
-    .topName p{
-		font-size: 15px;
-	}
-    #top-nav {
-        float: left;
-        margin-right: 20px;
-    }
-    /*.menu-links {
-        float: right;
-    }*/
-    .menu-links .glyphicon {
-        font-size: 20px;
-    }
-    #name p {
-        font-size: 20px;
-    }
-    #name {
-        top: 50%;
-    }
-    #occupation {
-        top: 55%;
-    }
-    #occupation p {
-        font-size: 15px;
-    }
-    .cont {
-        padding-top: 30px;
-    }
-    .logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 30px;
-        padding-top: 30px
-    }
-}
 
 .content {
     display: none;
@@ -661,7 +515,7 @@ hr {
 }
  
 .menu li {
-    margin:0px 50px 0px 0px;
+    margin:0px 20px 0px 0px;
     float:left;
     list-style:none;
     font-size:17px;
@@ -674,18 +528,111 @@ hr {
 .menu a {
     transition:color linear 0.15s;
 }
+
+.aboutContainer{
+	height: 700px;
+}
  
-/*----- Responsive -----*/
-@media screen and (max-width: 1150px) {
+
+
+
+
+/*MEDIA QUERYS*/
+@media screen and (max-width: 1200px) {
     .wrap {
         width:90%;
     }
+
+    .menu li{
+	    margin: 0px 20px 0px 0px;
+    }
+
+    .menuItem a {
+	    display: inline-block;
+	    text-decoration: none;
+	    color: #45b29a;
+	    margin: 0 0 0 1em;
+	    font-size: 17px;
+	}
 }
- 
+
+@media screen and (max-width: 992px) {
+    .menu-links {
+        font-size: 14px !important;
+    }
+    .nav-list {
+        float: none;
+        text-align: center;
+    }
+    .menu ul {
+	    display: inline-block;
+	}
+    .topName{
+		float: right;
+    }
+    #top {
+		height: 700px;
+    }
+    #name p {
+        font-size: 40px;
+    }
+    #name {
+        top: 40%;
+	    height: 9%;
+	    width: 80%;
+    }
+    #occupation {
+        top: 50%;
+        height: 5%;
+	    width: 60%;
+    }
+    #occupation p {
+        font-size: 25px;
+    }
+    .testimonial {
+        font-size: 20px;
+    }
+    .quotes {
+        width: 5%;
+    }
+    .author {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        padding-top: 30px
+    }
+    #contactInfo {
+        font-size: 20px;
+    }
+    footer .reserved {
+        font-size: 20px;
+    }
+    .circular{
+		width: 200px;
+    	height: 200px;
+	    margin-top: 70px;
+	}
+	.abilities{
+		font-size: 12px;
+		margin-top: 40px;
+	}
+}
+
+
+
+
 @media screen and (max-width: 860px) {
     .menu {
         position:relative;
         display:inline-block;
+        float: left;
     }
  
     .menu ul.active {
@@ -708,8 +655,9 @@ hr {
     	font-size: 18px;
     	font-family: 'LemonMilk';
 	    color: #45b29a;
-	    margin: 10px 0px 0px 0px;
+	    margin: 10px 10px 0px 0px;
 	    text-decoration: none;
+	    float: right;
     }
  
     .menu ul:after {
@@ -749,4 +697,145 @@ hr {
         color:#66a992;
     }
 
+	.circular {
+	    width: 250px;
+	    height: 250px;
+	    margin-top: 0px;
+
+	}
+
 }
+
+
+@media screen and (max-width: 480px) {
+	.menu{
+		float: left;
+	}
+
+	.littleName{
+		float: right;
+	}
+
+	.circular{
+		/*width: 240px;*/
+    	height: 240px;
+	}
+
+	.abilities{
+		font-size: 12px;
+		margin-top: 70px;
+	}
+
+	#name p {
+		font-size: 30px;
+	}
+
+	#name {
+		width: 100%;
+		height: 6%;
+	}
+
+	#occupation {
+	    width: 70%; 
+	}
+
+	#occupation p {
+		font-size: 25px;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+	.circular{
+	    height: 230px !important;
+	    width: 230px !important;
+    }
+	#top{
+		position-x: 50%; 
+	    height: 480px;
+	    background-position: center;
+	}
+
+    .topName p{
+		font-size: 15px;
+	}
+    #top-nav {
+        float: left;
+        /*margin-right: 20px;*/
+    }
+    /*.menu-links {
+        float: right;
+    }*/
+    .menu-links .glyphicon {
+        font-size: 20px;
+    }
+    #name p {
+        font-size: 20px;
+    }
+    #name {
+        top: 50%;
+    	width: 100%;
+        height: auto;
+    }
+    #occupation {
+        top: 57%;
+        height: auto;
+        width: auto;
+    }
+    #occupation p {
+        font-size: 15px;
+    }
+    .cont {
+        padding-top: 30px;
+    }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        padding-top: 30px
+    }
+
+    iframe{
+    	width: 290px;
+    	height: 190px;
+    }
+
+    .testimonial {
+	    font-size: 15px;
+	}
+
+	.carousel-inner {
+		height: 300px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+
+/*@media (min-width: 768px) {
+    .topName p {
+        font-size: 30px;
+        float: left;
+    }
+    .menu-links {
+        font-size: 15px !important;
+    }
+    .nav-list {
+        float: right;
+    }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        padding-top: 30px
+    }
+    #contactInfo {
+        font-size: 15px;
+    }
+    footer .reserved {
+        font-size: 20px;
+    }
+}
+*/

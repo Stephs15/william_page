@@ -23,6 +23,7 @@
     <script src="js/headroom.min.js"></script>
     <script src="js/main.js"></script>
 
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,12 +47,12 @@
                             </a>
                         </div>
                         
-                        <div>
-                        <nav id="top-nav" class="menu">
+                        <div class="row">
+                        <nav id="top-nav" class="menu col-xs-1 col-md-7">
                             <div class="menu-scroll">
-                                <ul class="transition nav-list">
+                                <ul class="transition nav-list active">
                                     <li class="menuItem">
-                                        <a class="menu-links active" id="about" href="#aboutMeA">
+                                        <a class="menu-links" id="about" href="#aboutMeA">
                                             BIO
                                         </a>
                                     </li>
@@ -69,7 +70,7 @@
                                     </li>
 
                                     <li class="menuItem">
-                                        <a class="menu-links" id="clients" href="#clientsA">
+                                        <a class="menu-links" id="clientsl" href="#clientsA">
                                             CLIENTS
                                         </a>
                                     </li>
@@ -85,7 +86,7 @@
                             <a class="toggle-nav" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
 
                         </nav>
-                            <div class="col-xs-8 text-center visible-xs">
+                            <div class="col-xs-11 text-center visible-xs">
                                 <!-- <a href="index.html" class="topName"> -->
                                   <p class="littleName">William Figueroa</p>
                                 <!-- </a> -->
@@ -118,13 +119,13 @@
         <section class= "lightSection" id="aboutMeSection">
             <div class="container">
                 <p class="title font40" style="margin-bottom: 25px"><span class="vLine">|</span>ABOUT ME</p>
-                <div class="row">
+                <div class="row aboutContainer">
                     <div class="row visible-lg visible-md">
                         <div class= "col-xs-3 col-sm-3 col-md-3 text-center">
                             <article>
                                 <figure>
                                     <!-- <img id="picture" src="img/photo.jpg"> -->
-                                    <div class="circular img-responsive" id="picture"></div>
+                                    <div class="circular" id="picture"></div>
                                 </figure>
                                 <p class="abilities">
                                     ADR / Looping
@@ -265,13 +266,11 @@
 
                 <div class="row space">
                     <div class="media video col-md-6 col-xs-12">
-                        <!-- <video class="media-object" src="media/rain_forest.mp4" type='video/mp4' controls preload></video>
-                        <p class="textItalic author ">- Rain Forest Alliance</p> -->
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/BLxkWxmj_xA" frameborder="0" allowfullscreen></iframe>
-                        <p class="textItalic author ">- Rain Forest Alliance</p>
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/xDYZmjnACa4" frameborder="0" allowfullscreen></iframe>
+                        <p class="textItalic author ">- Plants vs Zombies GW2</p>
                     </div>
 
-                    <div class="col-md-6 col-xs-12">
+                    <div class="media video col-md-6 col-xs-12">
                         <iframe width="420" height="315" src="https://www.youtube.com/embed/m_gMXYBI7hw" frameborder="0" allowfullscreen></iframe>
                         <p class="textItalic author ">- Fifa 2014 Commercial</p>
                     </div>
@@ -284,8 +283,8 @@
                     </div>
 
                     <div class="media video col-md-6 col-xs-12">
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/wBNfmPf4ncU" frameborder="0" allowfullscreen></iframe>
-                        <p class="textItalic author ">- Forever Tango</p>
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/BLxkWxmj_xA" frameborder="0" allowfullscreen></iframe>
+                        <p class="textItalic author ">- Rain Forest Alliance</p>
                     </div>
                 </div>
 
@@ -326,9 +325,9 @@
 
                     <div class="audio col-md-6 col-xs-12">
                         <audio controls>
-                            <source src="media/ciroq.mp3" type="audio/mpeg">
+                            <source src="media/rubbermaid.mp3" type="audio/mpeg">
                         </audio>
-                        <p class="textItalic ">- Pending*</p>
+                        <p class="textItalic ">- Rubber Maid</p>
                     </div>
                 </div>
 
@@ -514,7 +513,23 @@
                         </p>
 
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+                        <p class="col-xs-6 social textCenter">
+                            <a target="_blank" href="#"><img src="img/facebook_icon.png" alt=""></a>
+                        </p>
+                        <p class="col-xs-6 social textCenter">
+                            <a target="_blank" href="https://twitter.com/voicesbywilliam"><img src="img/twitter_icon.png" alt=""></a>
+                        </p>
+                        <p class="col-xs-6 social textCenter">
+                            <a target="_blank" href="#"><img src="img/linkedin_icon.png" alt=""></a>
+                        </p>
+                        <p class="col-xs-6 social textCenter">
+                            <a target="_blank" href="https://www.instagram.com/williamfigueroanyc/"><img src="img/instagram_icon.png" alt=""></a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-2 visible-lg visible-md">
                         <p class="col-xs-12 social textCenter">
                             <a target="_blank" href="#"><img src="img/facebook_icon.png" alt=""></a>
                         </p>
