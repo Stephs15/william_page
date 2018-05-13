@@ -533,6 +533,10 @@ header .container {
 	    padding: 0;
 	    width: auto;
 	}
+
+	.menu ul.active {
+    display: inline-block;
+}
 }
 
 @media (min-width: 992px) {
