@@ -1,0 +1,550 @@
+@font-face {
+    font-family: 'Floresant';
+    src: url(../fonts/Florsn02.ttf);
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(../fonts/LemonMilk.otf);
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url(../fonts/Signika-Regular.otf);
+}
+
+@font-face {
+    font-family: 'SignikaBold';
+    src: url(../fonts/Signika-Bold.otf);
+}
+
+/*Section Skew*/
+
+section:before {
+    content: "";
+    width: 100%;
+    height: 0;
+    padding-bottom: 10%;
+    margin-top: -4%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.workSection:before {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    background: #2d343e;
+}
+
+
+#testimonialsSection:before {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    background: #2d343e;
+}
+
+.workSectionA:before {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    background: #E0EBE8;
+}
+
+#clients:before {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    background: #E0EBE8;
+}
+
+#aboutMeSection:before {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    background: #E0EBE8;
+}
+
+#contactSection:before {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    background: #2d343e;
+}
+
+.workSection,
+.workSectionA,
+#testimonialsSection,
+#contactSection,
+#aboutMeSection,
+#clients {
+    width: 100%;
+    z-index: 200;
+}
+
+.lastElement {
+	margin-bottom: 10%;
+}
+
+/*BODY*/
+
+body {
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: 'Signika', sans-serif;
+    color: #545454;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.page {
+	overflow: hidden;
+}
+
+a:focus,
+a:hover,
+input:focus,
+select:focus {
+    border: none;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:hover,
+a p:hover {
+    text-decoration: none;
+    color: #21564b;
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a {
+	cursor: pointer;
+}
+
+.media {
+	margin-top: 0;
+}
+
+.white {
+    color: white;
+}
+
+.blackBG {
+    background-color: black;
+}
+
+.title {
+    font-family: 'Signika';
+    color: #45b29a;
+    font-size: 30px;
+    padding: 0;
+    text-align: left;
+    z-index: 500;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.vLine {
+    padding-right: 10px;
+    color: white;
+}
+
+.video,
+.audio {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.circular{
+    height: 230px;
+    width: 230px;
+  
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: url(../img/photo.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-animation-duration: 1s;
+}
+
+
+/* SECTIONS */
+
+.lightSection {
+    background-color: #E0EBE8;
+    position: relative;
+}
+
+.darkSection {
+    background-color: #2d343e;
+    position: relative;
+    color: white;
+}
+
+#top {
+    background-image: url(../img/panel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position-x: 50%; 
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    width: auto;
+    min-height: 480px;
+    max-height: 835px; 
+    background-position: center;
+}
+
+#nameSection #name {
+	font-size: 25px;
+	font-family: 'LemonMilk';
+	width: 80%
+}
+
+#nameSection #occupation {
+	font-size: 15px;
+	font-style: italic;
+	margin-top: 5px;
+	width: 60%
+}
+
+#name, #occupation {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+.topName p,
+.topName {
+    font-family: 'LemonMilk';
+    color: #45b29a;
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+    text-decoration: none;
+}
+
+/* ABOUT SECTION*/
+
+.aboutWrapper {
+	padding: 0 25px;
+}
+
+.hiTitle {
+	text-align: center;
+}
+
+.expander {
+    font-size: 20px;
+    color: #2d343e;
+    text-decoration: none;
+    display: block;
+	text-align: center;
+}
+
+.expander:visited{
+	color: #2d343e;
+}
+
+.abilities{
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+/* DEMOS SECTION */
+
+iframe{
+	width: 290px;
+	height: 190px;
+}
+
+.author {
+	font-size: 15px;
+	font-style: italic;
+}
+
+#moreButtonParent {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#moreButton,
+.submit {
+    float: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-family: 'LemonMilk';
+    background-color: #45b29a;
+    color: white;
+    font-size: 20px;
+}
+
+#moreButton:hover {
+    color: #21564b;
+}
+
+#workSect{
+	text-align: center;
+}
+
+/* Testimonial Section */
+.testimonial {
+	font-size:20px; 
+}
+
+.carousel-caption .author {
+	margin-top: 15px; 
+}
+
+/*Carousel*/
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-inner {
+    padding: 0 40px;
+}
+
+.carousel {
+    background: transparent;
+	min-height: 250px;
+    height: 100%;
+    margin: 50px 0;
+}
+
+.carousel-caption {
+    position: static;
+    width: 100%;
+}
+
+.quotes {
+    padding: 0px 5px 0px 5px;
+    width: 30px;
+}
+
+/* COMPANIES SECTION*/
+.logoGroup {
+	display: flex;
+	flex-wrap: wrap; 
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	margin: 20px 10px;
+}
+
+.logo img {
+	width: 130px;
+}
+
+.moreCompanies {
+	font-size: 20px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #45b29a;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* CONTACT SECTION */
+
+#contactInfo,.social {
+	text-align: center;
+	font-size: 20px;
+}
+
+.contact {
+	margin: 5px 0;
+}
+
+.social {
+	margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #2d343e;
+    color: white;
+    font
+}
+
+footer .reserved {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #E0EBE8;
+    z-index: 500;
+    border-bottom: 1px solid #dadada;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+header .container {
+	height: 65px
+}
+
+.headerWrapper {
+	display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: space-between;
+}
+
+.headerWrapper:after, .headerWrapper:before {
+	content: initial;
+}
+
+.bigName{
+	order: 2;
+	margin-right: 10px;
+}
+
+.menu ul {
+    width: 60%;
+    position:absolute;
+    top: 75px;
+    left:12px;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+    border-radius:3px;
+    background: #E0EBE8;
+    display: inline-block;
+    text-align: center;
+    z-index: 2;
+}
+
+.toggle-nav {
+    padding: 10px 10px 10px 25px;
+    float:left;
+    display:inline-block;
+    font-size:20px;
+    color: #45b29a;
+    transition:color linear 0.15s;
+}
+
+.toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        color:#66a992;
+    }
+
+.menu ul:after {
+    width:0px;
+    height:0px;
+    position:absolute;
+    top:0%;
+    left:22px;
+    content:'';
+    transform:translate(0%, -100%);
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom:7px solid #E0EBE8;
+}
+
+.menu ul.active {
+    display:none;
+}
+
+.menuItem {
+    display: block;
+    padding: 10px;
+    font-family: "SignikaBold";
+}
+
+.menuItem a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 0 1em;
+    color: #45b29a;
+    font-size: 120%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+
+	#nameSection #name {
+		font-size: 40px;
+	}
+
+	#nameSection #occupation {
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	#top{
+		height: 700px;
+	}
+
+	#nameSection #name {
+		width: 60%;
+	}
+
+	#nameSection #occupation {
+		width: 50%;
+	}
+
+	.toggle-nav, .littleName {
+		display: none;
+	}
+
+	.menu ul{
+		width: 100%;
+		position: relative;
+		border: none;
+		box-shadow: none;
+		position: initial;
+		text-align: right;
+		display: inline-block;
+		padding: 0;
+	}
+
+	.bigName{
+		order: 0;
+	}
+
+	.menuItem {
+	    display: inline-block;
+	    padding: 0;
+	    width: auto;
+	}
+}
+
+@media (min-width: 992px) {
+	#nameSection #name {
+		width: 50%;
+	}
+
+	#nameSection #occupation {
+		width: 40%;
+	}
+	
+	#contactInfo {
+		font-size: 14px;
+	}
+}

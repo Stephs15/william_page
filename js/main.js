@@ -18,8 +18,11 @@ $(document).ready(function() {
 
 function scrollToSection(section) {
     $('html, body').animate({
-        scrollTop: $(section).offset().top
+        scrollTop: $(section).offset().top - 60
     }, 1000);
+
+    jQuery('.toggle-nav').toggleClass('active');
+    jQuery('.menu ul').toggleClass('active');
 }
 
 $(document).ready(function() {

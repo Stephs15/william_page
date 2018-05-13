@@ -12,7 +12,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/bootstrap.icon-large.min.css" rel="stylesheet">
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -40,15 +40,13 @@
             <header class="">
                 <div class="container">
 
-                    <div class="row">
-                        <div class="col-md-4 text-center visible-md visible-lg visible-sm">
+                    <div class="row headerWrapper">
+                        <div class="bigName">
                             <a href="index.html" class="topName">
                               <p>William Figueroa</p>
                             </a>
                         </div>
-                        
-                        <div class="row">
-                        <nav id="top-nav" class="menu col-xs-1 col-md-7">
+                        <nav id="top-nav" class="menu">
                             <div class="menu-scroll">
                                 <ul class="transition nav-list active">
                                     <li class="menuItem">
@@ -86,15 +84,8 @@
                             <a class="toggle-nav" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
 
                         </nav>
-                            <div class="col-xs-11 text-center visible-xs">
-                                <!-- <a href="index.html" class="topName"> -->
-                                  <p class="littleName">William Figueroa</p>
-                                <!-- </a> -->
-                            </div>
-                    </div>
 
-                    </div>
-              
+                    </div>              
                 </div>
             </header>
         </section>
@@ -103,12 +94,12 @@
             <div id="top">
                 <div class="row">
                     <div class= "col-xs-12 col-md-6 blackBG animated slideInLeft" id="name">
-                        <p class="font50 white">William Figueroa</p>
+                        <p class="white">William Figueroa</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class= "col-xs-9 col-md-4 blackBG" id="occupation">
-                        <p class="font30 white textItalic">Voice Over Talent</p>
+                        <p class="white textItalic">Voice Over Talent</p>
                     </div>
                 </div>
 
@@ -118,8 +109,8 @@
         <span class="anchor" id="aboutMeA"></span>
         <section class= "lightSection" id="aboutMeSection">
             <div class="container">
-                <p class="title font40" style="margin-bottom: 25px"><span class="vLine">|</span>ABOUT ME</p>
-                <div class="row aboutContainer">
+                <p class="title"><span class="vLine">|</span>ABOUT ME</p>
+                <div class="row lastElement aboutContainer">
                     <div class="row visible-lg visible-md">
                         <div class= "col-xs-3 col-sm-3 col-md-3 text-center">
                             <article>
@@ -276,6 +267,19 @@
                     </div>
                 </div>
 
+
+                <div class="row">
+                    <div class="media video col-md-6 col-xs-12">
+                        <iframe width="420" height="315" src="https://www.youtube.com/watch?v=wT730YE9sTs" frameborder="0" allowfullscreen></iframe>
+                        <p class="textItalic author ">- Reeses Puffs</p>
+                    </div>
+
+                    <div class="media video col-md-6 col-xs-12">
+                       <iframe width="420" height="315" src="https://www.youtube.com/watch?v=zvCe84kpdj0" frameborder="0" allowfullscreen></iframe>
+                        <p class="textItalic author ">- La Naturaleza del Desayuno</p>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="media video col-md-6 col-xs-12">
                         <iframe width="420" height="315" src="https://www.youtube.com/embed/hYpfFaCs0zM" frameborder="0" allowfullscreen></iframe>
@@ -289,7 +293,8 @@
                 </div>
 
                 <div class="row" id="moreButtonParent">
-                    <a target="_blank" href="https://www.youtube.com/channel/UCclr-MXA7gViiXoNdJiduzQ" type="button" id="moreButton" class="font20 btn">More Videos</a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCclr-MXA7gViiXoNdJiduzQ" type="button" 
+                    id="moreButton" class="lastElement btn">More Videos</a>
                 </div>
                        
             </div>
@@ -304,14 +309,14 @@
                         <audio controls>
                             <source src="media/compilation.mp3" type="audio/mpeg">
                         </audio>
-                        <p class="textItalic ">- Voice Over Compilation</p>
+                        <p class="author ">- Voice Over Compilation</p>
                     </div>
 
                     <div class="audio col-md-6 col-xs-12">
                        <audio controls>
                             <source src="media/lion_king.mp3" type="audio/mpeg">
                         </audio>
-                        <p class="textItalic ">- Lion King Promo</p>
+                        <p class="author">- Lion King Promo</p>
                     </div>
                 </div>
 
@@ -320,19 +325,19 @@
                         <audio controls>
                             <source src="media/marriott.mp3" type="audio/mpeg">
                         </audio>
-                        <p class="textItalic ">- Marriott Hotel</p>
+                        <p class="author ">- Marriott Hotel</p>
                     </div>
 
                     <div class="audio col-md-6 col-xs-12">
                         <audio controls>
                             <source src="media/rubbermaid.mp3" type="audio/mpeg">
                         </audio>
-                        <p class="textItalic ">- Rubber Maid</p>
+                        <p class="author ">- Rubber Maid</p>
                     </div>
                 </div>
 
                 <div class="row" id="moreButtonParent">
-                    <a target="_blank" href="https://soundcloud.com/voicesbywilliam/" type="button" id="moreButton" class="font20 btn">More audios</a>
+                    <a target="_blank" href="https://soundcloud.com/voicesbywilliam/" type="button" id="moreButton" class="lastElement btn">More audios</a>
                 </div>
                        
             </div>
@@ -343,14 +348,14 @@
             <div class="container">
                 <p class="title font40"><span class="vLine">|</span>PEOPLE ARE SAYING...</p>
                 <!-- <div class="row"> -->
-                    <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+                    <div id="this-carousel-id" class="carousel lastElement slide"><!-- class of slide for animation -->
                       <div class="carousel-inner">
                         <div class="item active"><!-- class of active since it's the first item -->
                           <div class="carousel-caption">
                             <p class="testimonial font30">
                                 <img class="quotes" src="img/quote_open.png" alt="">
 
-                                ...I could not believe how fast and efficient was working with William <br> Figueroa. He was able to correct some syntax errors in the text <br>that made all the difference in the world
+                                ...I could not believe how fast and efficient was working with William Figueroa. He was able to correct some syntax errors in the text that made all the difference in the world
                                 <img class="quotes" src="img/quote_close.png" alt="">
                             </p>
                             <br>
@@ -362,7 +367,7 @@
                           <div class="carousel-caption container">
                             <p class="testimonial font30">
                                 <img class="quotes" src="img/quote_open.png" alt="">
-                                Whenever I need a voice with gravitas, I call William. His voice <br>lends authority to the project, whether it's about machining <br>industrial fittings or keeping your family safe in severe weather.<br>I love having him in my arsenal
+                                Whenever I need a voice with gravitas, I call William. His voice lends authority to the project, whether it's about machining industrial fittings or keeping your family safe in severe weather. I love having him in my arsenal
                                 <img class="quotes" src="img/quote_close.png" alt="">
                             </p>
                             <p class="author textItalic font20">Tony Chance, Senior Producer - CKP Media</p>
@@ -388,54 +393,50 @@
             <div class="container textCenter test">
                 <p class="title font40"><span class="vLine">|</span>HAPPY CLIENTS</p>
 
-                <div class="row logoGroup textCenter">
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/mcdonalds.png" class="logo">
+                <div class="row logoGroup">
+                    <div class="logo">
+                        <img src="img/mcdonalds.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/kraft2.png" class="logo">
+                    <div class="logo">
+                        <img src="img/kraft2.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/ciroc.png" class="logo">
+                    <div class="logo">
+                        <img src="img/ciroc.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/target.png" class="logo">
+                    <div class="logo">
+                        <img src="img/target.png">
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/marriott.png" class="logo">
+                    <div class="logo">
+                        <img src="img/marriott.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/pinesol.png" class="logo">
+                    <div class="logo">
+                        <img src="img/pinesol.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/erie.png" class="logo">
+                    <div class="logo">
+                        <img src="img/erie.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/continental2.png" class="logo">
+                    <div class="logo">
+                        <img src="img/continental2.png">
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/liberty.png" class="logo">
+                    <div class="logo">
+                        <img src="img/liberty.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/movado2.png" class="logo">
+                    <div class="logo">
+                        <img src="img/movado2.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/beechcraft.png" class="logo">
+                    <div class="logo">
+                        <img src="img/beechcraft.png">
                     </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <img src="img/florida2.png" class="logo">
+                    <div class="logo">
+                        <img src="img/florida2.png">
                     </div>
-                </div>
+                </div>  
 
-            <hr>
+                <hr>
 
-                <div class="font20">
+                <div class="moreCompanies lastElement">
                     And More...<br>
                     Lion King | Rubbermaid | Rain Forest Alliance | Beechcraft Aviation | Louis and Clark Expedition | Simpson Show | Santa is coming | Buffalo Wild Winds&#8482; | National TV & radio PSA campaign “Prevention of child abuse” | “The Road Rage an American tragedy” documentary 
                 </div>
